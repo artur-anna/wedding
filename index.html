@@ -42,7 +42,6 @@ section {
 <!-- HERO -->
 <section class="relative flex h-screen min-h-screen items-center justify-center overflow-hidden text-center">
 
-  <!-- МОБИЛЬНАЯ ВЕРСИЯ: фон -->
   <div class="absolute inset-0 md:hidden">
     <img
       src="https://lh3.googleusercontent.com/aida/ADBb0ugjbHexlgMZoIPt9cNt6yeJJQeGNUtT_Rkfwxc2emYUBqheVgvlBHBa9QP_ZLxkq0cVTiKq2_8rdeQYqPK9utPQKkugT3CIq3GFbk1aT-YdHaImYVupmbJSwfMCdfXF7cAupsb-0xHnq9nZTrUdTfrqcmsBEdgz5msCxibFLkvKm_j3hQkoG2n_vW2-6OgNhDQamvKr9e5bgKVYMtVel02t1xTvWUCQOLf135TjT84C13s-jzgI9DDMvirn1H8CkohG7F7g0vUQ8XM"
@@ -52,10 +51,8 @@ section {
 
   <div class="absolute inset-0 bg-black/40 md:hidden"></div>
 
-  <!-- DESKTOP SPLIT -->
   <div class="hidden md:flex w-full h-screen">
 
-    <!-- ТЕКСТ -->
     <div class="w-1/2 flex flex-col justify-center items-center text-center px-12 bg-[#f9f9f9]">
 
       <p class="uppercase tracking-[0.3em] text-sm text-black/50 mb-8">
@@ -72,7 +69,6 @@ section {
 
     </div>
 
-    <!-- ФОТО -->
     <div class="w-1/2">
       <img
         src="https://lh3.googleusercontent.com/aida/ADBb0ugjbHexlgMZoIPt9cNt6yeJJQeGNUtT_Rkfwxc2emYUBqheVgvlBHBa9QP_ZLxkq0cVTiKq2_8rdeQYqPK9utPQKkugT3CIq3GFbk1aT-YdHaImYVupmbJSwfMCdfXF7cAupsb-0xHnq9nZTrUdTfrqcmsBEdgz5msCxibFLkvKm_j3hQkoG2n_vW2-6OgNhDQamvKr9e5bgKVYMtVel02t1xTvWUCQOLf135TjT84C13s-jzgI9DDMvirn1H8CkohG7F7g0vUQ8XM"
@@ -82,7 +78,6 @@ section {
 
   </div>
 
-  <!-- МОБИЛЬНЫЙ КОНТЕНТ -->
   <div class="relative z-10 text-white px-6 md:hidden">
 
     <p class="uppercase tracking-[0.3em] text-sm text-white/70 mb-6">
@@ -157,13 +152,15 @@ fill="none" stroke="currentColor" stroke-width="1.8"/>
 class="w-full h-full object-cover object-top"/>
 </div>
 
-<div class="absolute inset-0 bg-black/30"></div>
+<!-- тёмный оверлей для читаемости -->
+<div class="absolute inset-0 bg-black/50"></div>
 
-<div class="relative z-10 max-w-2xl mx-auto bg-white px-8 py-14 shadow-2xl space-y-6">
+<!-- УБРАН БЕЛЫЙ ФОН -->
+<div class="relative z-10 max-w-2xl mx-auto px-8 py-14 space-y-6 text-white">
 
 <h2 class="font-display text-5xl uppercase tracking-widest">Локация</h2>
 
-<p class="uppercase text-xs tracking-widest text-black/50">
+<p class="uppercase text-xs tracking-widest text-white/70">
 Ростовская область
 </p>
 
@@ -171,12 +168,12 @@ class="w-full h-full object-cover object-top"/>
 с. Лакедемоновка
 </p>
 
-<p class="text-black/70">
+<p class="text-white/80">
   На территории вас ждет уютный дворик и бассейн. 
   Если захотите — берите с собой купальники, чтобы провести время максимально комфортно.
 </p>
 
-<p class="text-sm tracking-widest uppercase text-black/50">
+<p class="text-sm tracking-widest uppercase text-white/60">
 улица Заречная 76а
 </p>
 
@@ -184,14 +181,13 @@ class="w-full h-full object-cover object-top"/>
   href="https://yandex.ru/maps/11029/rostov-oblast/house/zarechnaya_ulitsa_76a/Z0EYcwJnTUEDQFptfX5xcn1qYQ==/?ll=38.557435%2C47.203177&z=19.45"
   target="_blank"
   rel="noopener noreferrer"
-  class="inline-block mt-4 border border-black px-10 py-4 uppercase text-xs tracking-widest hover:bg-black hover:text-white transition"
+  class="inline-block mt-4 border border-white px-10 py-4 uppercase text-xs tracking-widest hover:bg-white hover:text-black transition"
 >
   Открыть карту
 </a>
 
 </div>
 
-<!-- МЯГКИЙ ПЕРЕХОД -->
 <div class="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none"></div>
 
 </section>
