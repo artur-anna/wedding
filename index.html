@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+</style>
+
+</head>
+
+<body class="bg-[#f9f9f9] text-black">
+
+<main>
+
+<!-- HERO -->
+<section class="relative flex h-screen min-h-screen items-center justify-center overflow-hidden text-center">
+
+  <!-- МОБИЛЬНАЯ ВЕРСИЯ: фон -->
+  <div class="absolute inset-0 md:hidden">
+    <img
+      src="https://lh3.googleusercontent.com/aida/ADBb0ugjbHexlgMZoIPt9cNt6yeJJQeGNUtT_Rkfwxc2emYUBqheVgvlBHBa9QP_ZLxkq0cVTiKq2_8rdeQYqPK9utPQKkugT3CIq3GFbk1aT-YdHaImYVupmbJSwfMCdfXF7cAupsb-0xHnq9nZTrUdTfrqcmsBEdgz5msCxibFLkvKm_j3hQkoG2n_vW2-6OgNhDQamvKr9e5bgKVYMtVel02t1xTvWUCQOLf135TjT84C13s-jzgI9DDMvirn1H8CkohG7F7g0vUQ8XM"
+      class="w-full h-full object-cover scale-110 brightness-75"
+    />
+  </div>
+
+  <div class="absolute inset-0 bg-black/40 md:hidden"></div>
+
+  <!-- DESKTOP SPLIT -->
+  <div class="hidden md:flex w-full h-screen">
+
+    <!-- ТЕКСТ -->
+    <div class="w-1/2 flex flex-col justify-center items-center text-center px-12 bg-[#f9f9f9]">
+
+      <p class="uppercase tracking-[0.3em] text-sm text-black/50 mb-8">
+        23 мая 2026
+      </p>
+
+      <h1 class="font-display text-6xl lg:text-7xl mb-6">
+        Артур & Анна
+      </h1>
+
+      <p class="text-black/70 max-w-sm">
+        Приглашаем вас разделить с нами этот день
+      </p>
+
+    </div>
+
+    <!-- ФОТО -->
+    <div class="w-1/2">
+      <img
+        src="https://lh3.googleusercontent.com/aida/ADBb0ugjbHexlgMZoIPt9cNt6yeJJQeGNUtT_Rkfwxc2emYUBqheVgvlBHBa9QP_ZLxkq0cVTiKq2_8rdeQYqPK9utPQKkugT3CIq3GFbk1aT-YdHaImYVupmbJSwfMCdfXF7cAupsb-0xHnq9nZTrUdTfrqcmsBEdgz5msCxibFLkvKm_j3hQkoG2n_vW2-6OgNhDQamvKr9e5bgKVYMtVel02t1xTvWUCQOLf135TjT84C13s-jzgI9DDMvirn1H8CkohG7F7g0vUQ8XM"
+        class="w-full h-full object-cover object-center"
+      />
+    </div>
+
+  </div>
+
+  <!-- МОБИЛЬНЫЙ КОНТЕНТ -->
+  <div class="relative z-10 text-white px-6 md:hidden">
+
+    <p class="uppercase tracking-[0.3em] text-sm text-white/70 mb-6">
+      23 мая 2026
+    </p>
+
+    <h1 class="font-display text-5xl mb-4">
+      Артур & Анна
+    </h1>
+
+    <p class="text-white/80">
+      Приглашаем вас разделить с нами этот день
+    </p>
+
+  </div>
+
+</section>
+
+<!-- DATE -->
+<section class="flex min-h-screen flex-col justify-center items-center text-center px-6">
+
+<h2 class="font-display italic text-7xl mb-16">Суббота</h2>
+
+<div class="max-w-xl w-full">
+
+<div class="grid grid-cols-3 border-t border-b border-black/20">
+
+<div class="py-3 text-xs uppercase tracking-widest text-black/40 border-r">пятница</div>
+<div class="py-3 text-xs uppercase tracking-widest border-r font-bold">суббота</div>
+<div class="py-3 text-xs uppercase tracking-widest text-black/40">воскресенье</div>
+
+<div class="py-12 border-r flex items-center justify-center">
+<span class="text-5xl text-black/30 font-display">22</span>
+</div>
+
+<div class="py-12 border-r flex items-center justify-center relative">
+
+<svg class="absolute w-44 h-44 text-[#B4271C]/80 -rotate-3"
+viewBox="0 0 100 100">
+<path d="M48,85 C30,72 12,58 10,40 C8,22 30,12 45,22 C48,24 50,28 52,28 C54,28 56,24 60,22 C75,12 94,22 92,40 C90,58 72,72 54,85"
+fill="none" stroke="currentColor" stroke-width="1.2"/>
+<path d="M46,82 C28,70 15,55 12,38 C10,25 25,18 35,20 C45,22 48,30 50,32 C52,30 55,22 65,20 C75,18 90,25 88,38 C85,55 70,70 52,82"
+fill="none" stroke="currentColor" stroke-width="1.8"/>
+</svg>
+
+<span class="text-7xl font-display relative z-10">23</span>
+
+</div>
+
+<div class="py-12 flex items-center justify-center">
+<span class="text-5xl text-black/30 font-display">24</span>
+</div>
+
+</div>
+
+<p class="mt-10 text-4xl uppercase tracking-widest font-display">Май</p>
+
+<div class="mt-16 space-y-4 text-lg">
+  <p class="font-display">Сбор гостей — <span class="font-semibold">15:00</span></p>
+  <p class="font-display">Церемония бракосочетания — <span class="font-semibold">16:00</span></p>
+</div>
+
+</div>
+
+</section>
+
+<!-- LOCATION -->
+<section class="flex items-center justify-center text-center relative">
+
+<div class="absolute inset-0">
+<img src="forest_2.png"
+class="w-full h-full object-cover object-top"/>
+</div>
+
+<div class="absolute inset-0 bg-black/30"></div>
+
+<div class="relative z-10 max-w-2xl mx-auto bg-white px-8 py-14 shadow-2xl space-y-6">
+
+<h2 class="font-display text-5xl uppercase tracking-widest">Локация</h2>
+
+<p class="uppercase text-xs tracking-widest text-black/50">
+Ростовская область
+</p>
+
+<p class="font-display italic text-2xl">
+с. Лакедемоновка
+</p>
+
+<p class="text-black/70">
+  На территории вас ждет уютный дворик и бассейн. 
+  Если захотите — берите с собой купальники, чтобы провести время максимально комфортно.
+</p>
+
+<p class="text-sm tracking-widest uppercase text-black/50">
+улица Заречная 76а
+</p>
+
+<a 
+  href="https://yandex.ru/maps/11029/rostov-oblast/house/zarechnaya_ulitsa_76a/Z0EYcwJnTUEDQFptfX5xcn1qYQ==/?ll=38.557435%2C47.203177&z=19.45"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-block mt-4 border border-black px-10 py-4 uppercase text-xs tracking-widest hover:bg-black hover:text-white transition"
+>
+  Открыть карту
+</a>
+
+</div>
+
+<!-- МЯГКИЙ ПЕРЕХОД -->
+<div class="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none"></div>
+
+</section>
+
+<!-- DRESS -->
+<section class="bg-black text-white flex flex-col justify-center items-center text-center">
+
+<h2 class="font-display italic text-7xl mb-20">Черная классика</h2>
+
+<div class="max-w-3xl grid md:grid-cols-2 gap-16">
+
+<div>
+<p class="uppercase text-xs tracking-widest text-white/50 mb-3">Дамы</p>
+<p class="font-display text-xl">Черные платья или костюмы</p>
+</div>
+
+<div>
+<p class="uppercase text-xs tracking-widest text-white/50 mb-3">Мужчины</p>
+<p class="font-display text-xl">Черный костюм и белая рубашка</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- RSVP -->
+<section class="flex flex-col justify-center items-center text-center">
+
+<h3 class="font-display italic text-6xl mb-10">
+Мы будем счастливы видеть вас
+</h3>
+
+<button class="bg-black text-white px-14 py-5 uppercase tracking-widest text-sm hover:opacity-80 transition">
+Подтвердить присутствие
+</button>
+
+<p class="mt-8 text-xs uppercase tracking-widest text-black/40">
+До 12 мая
+</p>
+
+</section>
+
+</main>
+
+</body>
+</html>
