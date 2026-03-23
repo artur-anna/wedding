@@ -15,6 +15,7 @@ html, body {
 
 main {
   height: 100vh;
+  height: 100dvh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -23,7 +24,8 @@ main {
 section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
   position: relative;
   overflow: hidden;
 }
@@ -545,7 +547,7 @@ body {
 <main>
 
 <!-- HERO -->
-<section class="relative flex h-screen min-h-screen items-center justify-center overflow-hidden text-center texture-noise">
+<section class="relative flex items-center justify-center overflow-hidden text-center texture-noise">
 
   <!-- МОБИЛЬНАЯ ВЕРСИЯ: фон -->
   <div class="absolute inset-0 md:hidden">
@@ -558,7 +560,7 @@ body {
   <div class="absolute inset-0 bg-black/40 md:hidden"></div>
 
   <!-- DESKTOP SPLIT -->
-  <div class="hidden md:flex w-full h-screen">
+  <div class="hidden md:flex w-full h-full">
 
     <!-- ТЕКСТ -->
     <div class="w-1/2 flex flex-col justify-center items-center text-center px-12 texture-paper">
@@ -626,48 +628,48 @@ body {
 </section>
 
 <!-- DATE -->
-<section class="flex min-h-screen flex-col justify-center items-center text-center px-6 gradient-soft texture-noise vignette">
+<section class="flex flex-col justify-center items-center text-center px-6 py-[3vh] gradient-soft texture-noise vignette">
 
-<h2 class="fade-in font-display italic text-6xl md:text-7xl mb-16 font-light">Суббота</h2>
+<h2 class="fade-in font-display italic text-4xl md:text-7xl mb-[2vh] md:mb-16 font-light">Суббота</h2>
 
 <div class="max-w-xl w-full fade-in delay-2">
 
 <div class="calendar-grid grid grid-cols-3 bg-white/50">
 
 <!-- Заголовки дней -->
-<div class="py-4 caption text-black/50 calendar-cell calendar-cell-divider">пт</div>
-<div class="py-4 caption font-medium text-black/80 calendar-cell calendar-cell-divider border-b border-black/10">сб</div>
-<div class="py-4 caption text-black/50 calendar-cell">вс</div>
+<div class="py-2 md:py-4 caption text-black/50 calendar-cell calendar-cell-divider">пт</div>
+<div class="py-2 md:py-4 caption font-medium text-black/80 calendar-cell calendar-cell-divider border-b border-black/10">сб</div>
+<div class="py-2 md:py-4 caption text-black/50 calendar-cell">вс</div>
 
 <!-- Числа -->
-<div class="py-14 flex items-center justify-center calendar-cell calendar-cell-divider">
-  <span class="text-5xl text-black/20 font-display font-light">22</span>
+<div class="py-[3vh] md:py-14 flex items-center justify-center calendar-cell calendar-cell-divider">
+  <span class="text-4xl md:text-5xl text-black/20 font-display font-light">22</span>
 </div>
 
-<div class="py-14 flex items-center justify-center relative calendar-cell calendar-cell-divider date-highlight">
-  <svg class="heart-svg absolute w-44 h-44 text-[#B4271C]/70"
+<div class="py-[3vh] md:py-14 flex items-center justify-center relative calendar-cell calendar-cell-divider date-highlight">
+  <svg class="heart-svg absolute w-28 h-28 md:w-44 md:h-44 text-[#B4271C]/70"
   viewBox="0 0 100 100">
     <path class="heart-path" d="M48,85 C30,72 12,58 10,40 C8,22 30,12 45,22 C48,24 50,28 52,28 C54,28 56,24 60,22 C75,12 94,22 92,40 C90,58 72,72 54,85"
     fill="none" stroke="currentColor" stroke-width="1"/>
     <path class="heart-path" d="M46,82 C28,70 15,55 12,38 C10,25 25,18 35,20 C45,22 48,30 50,32 C52,30 55,22 65,20 C75,18 90,25 88,38 C85,55 70,70 52,82"
     fill="none" stroke="currentColor" stroke-width="1.5"/>
   </svg>
-  <span class="text-7xl font-display relative z-10 font-medium date-number-main">23</span>
+  <span class="text-5xl md:text-7xl font-display relative z-10 font-medium date-number-main">23</span>
 </div>
 
-<div class="py-14 flex items-center justify-center calendar-cell">
-  <span class="text-5xl text-black/20 font-display font-light">24</span>
+<div class="py-[3vh] md:py-14 flex items-center justify-center calendar-cell">
+  <span class="text-4xl md:text-5xl text-black/20 font-display font-light">24</span>
 </div>
 
 </div>
 
-<p class="fade-in delay-3 mt-12 text-3xl md:text-4xl tracking-[0.3em] font-display font-light uppercase">Май</p>
+<p class="fade-in delay-3 mt-[2vh] md:mt-12 text-2xl md:text-4xl tracking-[0.3em] font-display font-light uppercase">Май</p>
 
-<div class="fade-in delay-3 mt-4 mb-12">
+<div class="fade-in delay-3 mt-1 md:mt-4 mb-[2vh] md:mb-12">
   <span class="caption text-black/40">2026</span>
 </div>
 
-<div class="space-y-6 text-xl">
+<div class="space-y-3 md:space-y-6 text-base md:text-xl">
   <p class="fade-in delay-4 font-body font-light leading-relaxed">
     Сбор гостей — <span class="font-medium">15:00</span>
   </p>
@@ -682,7 +684,7 @@ body {
 </section>
 
 <!-- LOCATION -->
-<section class="flex items-center justify-center text-center relative">
+<section class="flex flex-col items-center justify-center text-center relative">
 
 <div class="absolute inset-0 overflow-hidden">
 <img src="forest_2.png"
@@ -691,7 +693,7 @@ class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 
 <div class="absolute inset-0 bg-black/50"></div>
 
-<div class="fade-in relative z-10 max-w-2xl mx-auto px-8 md:px-12 py-14 md:py-16 space-y-6 text-white">
+<div class="fade-in relative z-10 max-w-2xl mx-auto px-8 md:px-12 py-[3vh] md:py-16 space-y-[2vh] md:space-y-6 text-white">
 
 <h2 class="fade-in delay-1 font-display text-4xl md:text-5xl tracking-[0.2em] font-light uppercase text-shadow-lg">Локация</h2>
 
@@ -729,18 +731,18 @@ class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 </section>
 
 <!-- DRESS -->
-<section class="bg-black text-white flex flex-col justify-center items-center text-center px-4 py-8 md:py-16">
+<section class="bg-black text-white flex flex-col justify-center items-center text-center px-4 py-[2vh] md:py-16">
 
-<p class="fade-in caption text-white/60 mb-3 md:mb-6">Дресс-код</p>
+<p class="fade-in caption text-white/60 mb-2 md:mb-6">Дресс-код</p>
 
-<h2 class="fade-in delay-1 font-display italic text-4xl md:text-7xl mb-6 md:mb-12 font-light">Черная классика</h2>
+<h2 class="fade-in delay-1 font-display italic text-3xl md:text-7xl mb-[2vh] md:mb-12 font-light">Черная классика</h2>
 
 <!-- Изображение дресс-кода -->
-<div class="fade-in delay-2 mb-6 md:mb-12">
+<div class="fade-in delay-2 mb-[2vh] md:mb-12">
   <img
     src="dresscode.png"
     alt="Дресс-код: черный костюм и черное платье"
-    class="max-h-[35vh] md:max-h-[50vh] w-auto object-contain"
+    class="max-h-[30vh] md:max-h-[50vh] w-auto object-contain"
   />
 </div>
 
@@ -762,11 +764,11 @@ class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 </section>
 
 <!-- DETAILS / WISHES -->
-<section class="flex flex-col justify-center items-center text-center px-6 py-16 gradient-soft texture-noise vignette relative">
+<section class="flex flex-col justify-center items-center text-center px-6 py-[3vh] md:py-16 gradient-soft texture-noise vignette relative">
 
-<h2 class="fade-in font-display italic text-4xl md:text-6xl mb-12 md:mb-16 font-light">Несколько пожеланий</h2>
+<h2 class="fade-in font-display italic text-3xl md:text-6xl mb-[3vh] md:mb-16 font-light">Несколько пожеланий</h2>
 
-<div class="max-w-2xl space-y-10 md:space-y-12">
+<div class="max-w-2xl space-y-[2vh] md:space-y-12">
 
 <p class="fade-in delay-1 quote-style text-black/70 leading-relaxed">
   Не утруждайтесь выбором <span class="font-semibold text-black/90">подарка</span>, мы будем рады вашим пожеланиям в конверте, так вы поможете нам осуществить наши общие мечты и цели.
@@ -783,7 +785,7 @@ class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 </section>
 
 <!-- RSVP -->
-<section class="flex flex-col justify-center items-center text-center px-6 rsvp-section relative overflow-hidden texture-noise">
+<section class="flex flex-col justify-center items-center text-center px-6 py-[2vh] rsvp-section relative overflow-hidden texture-noise">
 
 <!-- Градиентный фон -->
 <div class="absolute inset-0 bg-gradient-to-b from-[#f9f9f9] via-[#f5f5f5] to-[#eeeeee]"></div>
@@ -792,20 +794,20 @@ class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 
 <div class="relative z-10">
 
-<h3 class="fade-in font-display italic text-4xl md:text-6xl mb-4 font-light leading-tight">
+<h3 class="fade-in font-display italic text-3xl md:text-6xl mb-2 md:mb-4 font-light leading-tight">
 Мы будем счастливы
 </h3>
-<h3 class="fade-in delay-1 font-display italic text-4xl md:text-6xl mb-12 font-light leading-tight">
+<h3 class="fade-in delay-1 font-display italic text-3xl md:text-6xl mb-[3vh] md:mb-12 font-light leading-tight">
 видеть вас
 </h3>
 
-<button class="fade-in delay-2 btn-glow bg-black text-white px-14 py-5 font-body font-medium uppercase text-sm tracking-widest">
+<button class="fade-in delay-2 btn-glow bg-black text-white px-10 md:px-14 py-4 md:py-5 font-body font-medium uppercase text-xs md:text-sm tracking-widest">
 Подтвердить присутствие
 </button>
 
 <!-- Таймер обратного отсчёта -->
-<div class="fade-in delay-3 mt-10">
-  <p class="caption text-black/50 mb-4">Пожалуйста, подтвердите присутствие</p>
+<div class="fade-in delay-3 mt-[2vh] md:mt-10">
+  <p class="caption text-black/50 mb-2 md:mb-4">Пожалуйста, подтвердите присутствие</p>
   <div class="flex items-center justify-center gap-6" id="countdown">
     <div class="text-center">
       <span class="font-display text-4xl md:text-5xl font-light" id="countdown-days">--</span>
@@ -826,14 +828,14 @@ class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 </div>
 
 <!-- Контакт ведущего -->
-<div class="fade-in delay-4 mt-12 pt-8 border-t border-black/10">
-  <p class="quote-style text-black/50 text-base mb-3">Остались вопросы? Можете связаться с нашим ведущим по телефону</p>
+<div class="fade-in delay-4 mt-[2vh] md:mt-12 pt-[1.5vh] md:pt-8 border-t border-black/10">
+  <p class="quote-style text-black/50 text-sm md:text-base mb-2 md:mb-3">Остались вопросы? Можете связаться с нашим ведущим по телефону</p>
   <a href="tel:+79185386851" class="font-display text-xl md:text-2xl text-black/70 hover:text-black transition tracking-wide">
     +7 918 538 68 51
   </a>
 </div>
 
-<p class="fade-in delay-5 mt-12 font-display text-2xl text-black/20 tracking-widest">
+<p class="fade-in delay-5 mt-[2vh] md:mt-12 font-display text-xl md:text-2xl text-black/20 tracking-widest">
 А <span class="font-light">&</span> А
 </p>
 
