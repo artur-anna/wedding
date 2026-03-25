@@ -552,7 +552,7 @@ body {
   <!-- МОБИЛЬНАЯ ВЕРСИЯ: фон -->
   <div class="absolute inset-0 md:hidden">
     <img
-      src="https://lh3.googleusercontent.com/aida/ADBb0ugjbHexlgMZoIPt9cNt6yeJJQeGNUtT_Rkfwxc2emYUBqheVgvlBHBa9QP_ZLxkq0cVTiKq2_8rdeQYqPK9utPQKkugT3CIq3GFbk1aT-YdHaImYVupmbJSwfMCdfXF7cAupsb-0xHnq9nZTrUdTfrqcmsBEdgz5msCxibFLkvKm_j3hQkoG2n_vW2-6OgNhDQamvKr9e5bgKVYMtVel02t1xTvWUCQOLf135TjT84C13s-jzgI9DDMvirn1H8CkohG7F7g0vUQ8XM"
+      src="hero.jpg"
       class="w-full h-full object-cover hero-image brightness-75"
     />
   </div>
@@ -587,7 +587,7 @@ body {
     <!-- ФОТО -->
     <div class="w-1/2 overflow-hidden">
       <img
-        src="https://lh3.googleusercontent.com/aida/ADBb0ugjbHexlgMZoIPt9cNt6yeJJQeGNUtT_Rkfwxc2emYUBqheVgvlBHBa9QP_ZLxkq0cVTiKq2_8rdeQYqPK9utPQKkugT3CIq3GFbk1aT-YdHaImYVupmbJSwfMCdfXF7cAupsb-0xHnq9nZTrUdTfrqcmsBEdgz5msCxibFLkvKm_j3hQkoG2n_vW2-6OgNhDQamvKr9e5bgKVYMtVel02t1xTvWUCQOLf135TjT84C13s-jzgI9DDMvirn1H8CkohG7F7g0vUQ8XM"
+        src="hero.jpg"
         class="w-full h-full object-cover object-center hero-image"
       />
     </div>
@@ -687,7 +687,7 @@ body {
 <section class="flex flex-col items-center justify-center text-center relative">
 
 <div class="absolute inset-0 overflow-hidden">
-<img src="forest_2.png"
+<img src="forest.jpg"
 class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 </div>
 
@@ -731,7 +731,13 @@ class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 </section>
 
 <!-- DRESS -->
-<section class="bg-black text-white flex flex-col justify-center items-center text-center px-4 py-[2vh] md:py-16">
+<section class="text-white flex flex-col justify-center items-center text-center px-4 py-[2vh] md:py-16 relative">
+
+<div class="absolute inset-0">
+  <img src="gradient_ref.jpg" class="w-full h-full object-cover" />
+</div>
+
+<div class="relative z-10 flex flex-col items-center">
 
 <p class="fade-in caption text-white/60 mb-2 md:mb-6">Дресс-код</p>
 
@@ -749,14 +755,18 @@ class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 <!-- Подписи: на мобильных в ряд компактно, на десктопе как раньше -->
 <div class="flex gap-8 md:gap-24">
 
-<div class="fade-in-left delay-3">
+<div class="fade-in-left delay-3 flex flex-col items-center">
 <p class="caption text-white/60 mb-1 md:mb-3 text-xs md:text-sm">Мужчины</p>
 <p class="font-body text-sm md:text-xl font-light leading-snug md:leading-relaxed">Черный костюм и белая рубашка</p>
+<div class="w-28 h-8 md:w-36 md:h-10 bg-white rounded-md mt-5 md:mt-8"></div>
 </div>
 
-<div class="fade-in-right delay-4">
+<div class="fade-in-right delay-4 flex flex-col items-center">
 <p class="caption text-white/60 mb-1 md:mb-3 text-xs md:text-sm">Дамы</p>
 <p class="font-body text-sm md:text-xl font-light leading-snug md:leading-relaxed">Черное платье или костюм</p>
+<div class="w-28 h-8 md:w-36 md:h-10 bg-black rounded-md mt-5 md:mt-8"></div>
+</div>
+
 </div>
 
 </div>
@@ -764,21 +774,33 @@ class="parallax-bg w-full h-full object-cover object-top scale-110"/>
 </section>
 
 <!-- DETAILS / WISHES -->
-<section class="flex flex-col justify-center items-center text-center px-6 py-[3vh] md:py-16 gradient-soft texture-noise vignette relative">
+<section class="flex flex-col justify-center items-center text-center px-6 py-[3vh] md:py-16 relative">
 
-<h2 class="fade-in font-display italic text-3xl md:text-6xl mb-[3vh] md:mb-16 font-light">Несколько пожеланий</h2>
+<div class="absolute inset-0">
+  <img src="hero_2.jpg" class="w-full h-full object-cover" />
+</div>
+<div class="absolute inset-0 bg-black/35"></div>
+
+<div class="relative z-10">
+
+<div class="fade-in mb-[3vh] md:mb-16 text-white flex flex-col items-center">
+  <span class="font-body font-semibold text-6xl md:text-9xl leading-tight">Несколько</span>
+  <span class="font-display italic font-light text-white/50 text-4xl md:text-7xl leading-tight">пожеланий</span>
+</div>
 
 <div class="max-w-2xl space-y-[2vh] md:space-y-12">
 
-<p class="fade-in delay-1 quote-style text-black/70 leading-relaxed">
-  Не утруждайтесь выбором <span class="font-semibold text-black/90">подарка</span>, мы будем рады вашим пожеланиям в конверте, так вы поможете нам осуществить наши общие мечты и цели.
+<p class="fade-in delay-1 font-body font-light text-white/80 leading-relaxed text-base md:text-xl">
+  Не утруждайтесь выбором <span class="font-semibold text-white">подарка</span>, мы будем рады вашим пожеланиям в конверте
 </p>
 
-<div class="fade-in delay-2 w-16 h-px bg-black/20 mx-auto"></div>
+<div class="fade-in delay-2 w-16 h-px bg-white/30 mx-auto"></div>
 
-<p class="fade-in delay-3 quote-style text-black/70 leading-relaxed">
-  Приятным комплиментом для нас <span class="font-semibold text-black/90">вместо цветов</span> будет бутылка хорошего алкоголя, чтобы мы могли приятно провести время с благодарностью и тёплыми воспоминаниями.
+<p class="fade-in delay-3 font-body font-light text-white/80 leading-relaxed text-base md:text-xl">
+  Приятным комплиментом для нас <span class="font-semibold text-white">вместо цветов</span> будет бутылка хорошего алкоголя, чтобы мы могли приятно провести время с тёплыми воспоминаниями.
 </p>
+
+</div>
 
 </div>
 
